@@ -1,0 +1,14 @@
+Time resolution is 1 ps
+				 time 		 test_in0 		 test_in1 		 test_fxn 		 test_out
+                   0 		 110101 			 110101 			 000 			 110101
+                 100 		 110101 			 110101 			 001 			 110101
+                 200 		 110101 			 111111 			 010 			 001011
+                 300 		 110101 			 111111 			 011 			 000001
+                 400 		 001001 			 001000 			 100 			 000000
+                 500 		 010101 			 010101 			 100 			 000000
+                 600 		 000011 			 011001 			 100 			 000001
+                 700 		 000000 			 111001 			 100 			 000001
+                 800 		 100000 			 011000 			 100 			 000000
+                 900 		 111111 			 000000 			 101 			 000000
+                1000 		 111111 			 111111 			 101 			 111111
+The simulator has terminated in an unexpected manner with exit code 1073807364.  Please review the simulation log (xsim.log) for details.

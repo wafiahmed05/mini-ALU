@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Mar 15 17:34:04 2025
+# Process ID         : 19696
+# Current directory  : C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.runs/impl_1
+# Command line       : vivado.exe -log alu.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source alu.tcl -notrace
+# Log file           : C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.runs/impl_1/alu.vdi
+# Journal file       : C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.runs/impl_1\vivado.jou
+# Running On         : Wafi
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 1382 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16543 MB
+# Swap memory        : 4831 MB
+# Total Virtual      : 21375 MB
+# Available Virtual  : 3997 MB
+#-----------------------------------------------------------
+source alu.tcl -notrace

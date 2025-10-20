@@ -1,0 +1,265 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Mar 16 13:53:42 2025
+# Process ID         : 18120
+# Current directory  : C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.runs/synth_1
+# Command line       : vivado.exe -log alu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu.tcl
+# Log file           : C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.runs/synth_1/alu.vds
+# Journal file       : C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.runs/synth_1\vivado.jou
+# Running On         : Wafi
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 1382 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16543 MB
+# Swap memory        : 4831 MB
+# Total Virtual      : 21375 MB
+# Available Virtual  : 3624 MB
+#-----------------------------------------------------------
+source alu.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/utils_1/imports/synth_1/alu_tb.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/utils_1/imports/synth_1/alu_tb.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top alu -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28820
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1031.141 ; gain = 466.266
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fn_rca_6bit' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/fn_rca_6bit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FullAdder' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/full_adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FullAdder' (0#1) [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/full_adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fn_rca_6bit' (0#1) [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/fn_rca_6bit.v:3]
+WARNING: [Synth 8-7071] port 'overflow' of module 'fn_rca_6bit' is unconnected for instance 'copyA' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:15]
+WARNING: [Synth 8-7071] port 'c_out' of module 'fn_rca_6bit' is unconnected for instance 'copyA' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:15]
+WARNING: [Synth 8-7023] instance 'copyA' of module 'fn_rca_6bit' has 6 connections declared, but only 4 given [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:15]
+WARNING: [Synth 8-7071] port 'overflow' of module 'fn_rca_6bit' is unconnected for instance 'copyB' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:16]
+WARNING: [Synth 8-7071] port 'c_out' of module 'fn_rca_6bit' is unconnected for instance 'copyB' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:16]
+WARNING: [Synth 8-7023] instance 'copyB' of module 'fn_rca_6bit' has 6 connections declared, but only 4 given [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:16]
+WARNING: [Synth 8-7071] port 'overflow' of module 'fn_rca_6bit' is unconnected for instance 'negateA' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:17]
+WARNING: [Synth 8-7071] port 'c_out' of module 'fn_rca_6bit' is unconnected for instance 'negateA' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:17]
+WARNING: [Synth 8-7023] instance 'negateA' of module 'fn_rca_6bit' has 6 connections declared, but only 4 given [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:17]
+WARNING: [Synth 8-7071] port 'overflow' of module 'fn_rca_6bit' is unconnected for instance 'negateB' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:18]
+WARNING: [Synth 8-7071] port 'c_out' of module 'fn_rca_6bit' is unconnected for instance 'negateB' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:18]
+WARNING: [Synth 8-7023] instance 'negateB' of module 'fn_rca_6bit' has 6 connections declared, but only 4 given [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:18]
+INFO: [Synth 8-6157] synthesizing module 'fn_a_gt_b' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/gte_8bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'greater_than_2bit' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/greater_than_2bit.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'greater_than_2bit' (0#1) [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/greater_than_2bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'eq2' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/eq2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'eq1' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/eq1.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'eq1' (0#1) [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/eq1.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'eq2' (0#1) [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/eq2.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'fn_a_gt_b' (0#1) [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/gte_8bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fn_xnor_6bit' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/fn_xnor_6bit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'xnor_1b' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/xnor_1b.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'xnor_1b' (0#1) [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/xnor_1b.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'fn_xnor_6bit' (0#1) [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/fn_xnor_6bit.v:3]
+WARNING: [Synth 8-7071] port 'overflow' of module 'fn_rca_6bit' is unconnected for instance 'A_plus_B' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:21]
+WARNING: [Synth 8-7071] port 'c_out' of module 'fn_rca_6bit' is unconnected for instance 'A_plus_B' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:21]
+WARNING: [Synth 8-7023] instance 'A_plus_B' of module 'fn_rca_6bit' has 6 connections declared, but only 4 given [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:21]
+WARNING: [Synth 8-7071] port 'overflow' of module 'fn_rca_6bit' is unconnected for instance 'A_minus_B' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:22]
+WARNING: [Synth 8-7071] port 'c_out' of module 'fn_rca_6bit' is unconnected for instance 'A_minus_B' [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:22]
+WARNING: [Synth 8-7023] instance 'A_minus_B' of module 'fn_rca_6bit' has 6 connections declared, but only 4 given [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.srcs/sources_1/new/alu.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.965 ; gain = 572.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.965 ; gain = 572.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.965 ; gain = 572.090
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1136.965 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/alu.xdc]
+Finished Parsing XDC File [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/alu.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/alu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/alu_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/alu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1223.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1223.188 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1223.188 ; gain = 658.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1223.188 ; gain = 658.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1223.188 ; gain = 658.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1223.188 ; gain = 658.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 36    
+	   2 Input      1 Bit         XORs := 42    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1223.188 ; gain = 658.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1334.094 ; gain = 769.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1334.094 ; gain = 769.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1344.414 ; gain = 779.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1560.176 ; gain = 995.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1560.176 ; gain = 995.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1560.176 ; gain = 995.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1560.176 ; gain = 995.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1560.176 ; gain = 995.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1560.176 ; gain = 995.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |     4|
+|2     |LUT3  |     3|
+|3     |LUT4  |     9|
+|4     |LUT5  |     5|
+|5     |LUT6  |    15|
+|6     |MUXF7 |     4|
+|7     |IBUF  |    15|
+|8     |OBUF  |     6|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1560.176 ; gain = 995.301
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1560.176 ; gain = 909.078
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1560.176 ; gain = 995.301
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1569.387 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1573.055 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 40d55ef4
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1573.055 ; gain = 1199.188
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1573.055 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator.ADMINTR-L21RQST/Documents/3rd Year Semester Two/3C7 Digital Systems Design/assignment_1/assignment_1.runs/synth_1/alu.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file alu_utilization_synth.rpt -pb alu_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 16 13:54:38 2025...
